@@ -2,40 +2,175 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nikolaos Rotas - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikolaos Rotas Portfolio</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Add this style to make the line break work in the typewriter text */
+    #typewriter-text {
+      white-space: pre-line;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Nikolaos Rotas</h1>
-    <p>Electrical and Computer Engineer</p>
+  <!-- Header with navigation -->
+  <header class="main-header">
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>My bio</p>
+  <!-- Home / Landing Section -->
+  <section class="landing" id="home">
+    <div class="landing-container">
+      <img src="rotasn.jpg" alt="Nikolaos Rotas" class="profile-pic" />
+      <div class="intro-text">
+        <h1 id="typewriter-text"></h1>
+        <a href="CV.pdf" class="cv-button" download>Download CV</a>
+      </div>
+    </div>
   </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
+  <!-- Skills Section -->
+  <section class="info" id="skills">
+    <h3>Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="devicon-javascript-plain colored"></i>
+        <h4>JavaScript</h4>
+        <div class="skill-level">
+          <div class="skill-bar" style="width: 90%"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <i class="devicon-python-plain colored"></i>
+        <h4>Python</h4>
+        <div class="skill-level">
+          <div class="skill-bar" style="width: 85%"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <i class="devicon-c-plain colored"></i>
+        <h4>C</h4>
+        <div class="skill-level">
+          <div class="skill-bar" style="width: 95%"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <i class="devicon-electron-original colored"></i>
+        <h4>Electron</h4>
+        <div class="skill-level">
+          <div class="skill-bar" style="width: 85%"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <i class="devicon-matlab-plain colored"></i>
+        <h4>Matlab</h4>
+        <div class="skill-level">
+          <div class="skill-bar" style="width: 85%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Projects Section -->
+  <section class="info" id="projects">
+    <h3>Projects</h3>
     <ul>
-      <li><strong>Marauder  </strong>An interactive fiction mapping application</li>
+      <li>
+        <b>Marauder</b>
+        <p><img src="marauder.ico" alt="Marauder icon" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
+        <p><a href="#" class="toggle-description">Description</a></p>
+        <div class="project-description" style="display: none;">
+          <p>An automatic mapping tool for Interactive Fiction games.</p>
+          <ul>
+            <li>Automatic mapping of the game's rooms and connections.</li>
+            <li>A multi-layer display system to display rooms on different floors</li>
+            <li>Quick travel to the desired room</li>
+            <li>Note taking for rooms</li>
+            <li>Automatic exploration (using an agent to build the map)</li>
+            <li>Save/Load maps for future playthroughs</li>
+          </ul>
+          <p><i>Built with Electron, using JavaScript and a bit of Python. Room detection uses rule-based filtering and NLP. Quick travel uses BFS. Auto-exploration uses DFS + backtracking. Maps are saved as JSON.</i></p>
+        </div>
+        <a href="https://github.com/rotasn/marauder/releases/tag/v-2.0" target="_blank" class="project-link">View Project</a>
+      </li>
     </ul>
   </section>
+  <!-- About Me Section -->
+  <section class="info" id="about">
+    <h3>About Me</h3>
+    <p>
+        I studied Mathematics for two years before switching to ECE. In 2025, I graduated from the University of Patras with an Integrated Master's in Electrical Engineering and Computer Technology. During my studies, I minored in Control Systems and Computer Technology.
+    </p>
+    <p>
+        In 2021, I completed an internship at the University Hospital of Patras, where I gained practical experience. 
+    </p>
+    <p>
+        I am now starting my career as an Electrical and Computer Engineer with a strong passion for software engineering. My interests span across hardware, software development, and integrating technology in meaningful ways to solve real-world problems.
+    </p>
+</section>
 
-  <section id="cv">
-    <h2>CV / Resume</h2>
-
+  <!-- Contact Section -->
+  <section class="info" id="contact">
+    <h3>Contact</h3>
+    <div class="social-icons">
+      <a href="mailto:rotasn@gmail.com" class="social-icon">
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+      </a>
+      <a href="https://github.com/rotasn" class="social-icon" target="_blank">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+      <a href="https://linkedin.com/in/rotasn" class="social-icon" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="tel:+306982994556" class="social-icon">
+        <i class="fas fa-phone"></i>
+        <span>Phone</span>
+      </a>
+    </div>
   </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: rotasn@gmail.com</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025</p>
-  </footer>
+  <!-- Scripts -->
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+  const toggleLinks = document.querySelectorAll('.toggle-description');
+  toggleLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const description = this.closest('li').querySelector('.project-description');
+      description.style.display = description.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+  
+  // Typewriter effect with pre-allocated space
+  const typewriterText = document.getElementById("typewriter-text");
+  const fullText = "Nikolaos Rotas\nElectrical and Computer Engineer";
+  
+  // Pre-set the height of the container to prevent layout shifts
+  typewriterText.style.height = (fullText.split('\n').length * 1.5) + 'em';
+  
+  let i = 0;
+  
+  function type() {
+    if (i < fullText.length) {
+      typewriterText.textContent += fullText.charAt(i);
+      i++;
+      setTimeout(type, 75);
+    }
+  }
+  type();
+});
+  </script>
 </body>
 </html>
