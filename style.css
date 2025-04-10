@@ -70,11 +70,11 @@ body {
  
 .intro-text h1 {
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Increased from 10px */
     color: white;
     white-space: pre-line; /* Preserves line breaks */
-    min-height: 60px; /* Ensure space for two lines of text */
-    width: 140%; /* Ensure full width */
+    min-height: 80px; /* Increased from 60px to provide more space */
+    width: 100%; /* Changed from 140% which was causing overflow */
 }
   
 
@@ -87,7 +87,7 @@ body {
     background-color: rgb(17, 184, 117);
     color: white;
     text-decoration: none;
-    margin-top: 30px;
+    margin-top: 20px; /* Ensure consistent spacing */
     font-weight: bold;
     border-radius: 5px;
     transition: background 0.3s ease;
@@ -267,6 +267,23 @@ body {
         flex-basis: 400px;
     }
 }
+/* Add this to your existing media queries for better mobile display */
+@media (max-width: 480px) {
+    .intro-text h1 {
+      font-size: 24px; /* Smaller font on very small screens */
+      min-height: 90px; /* More space for text */
+    }
+    
+    .intro-text {
+      padding-bottom: 20px; /* Extra padding at bottom */
+    }
+    
+    .cv-button {
+      margin-top: 30px; /* More space before button on mobile */
+      display: block; /* Make button full width on mobile */
+      text-align: center;
+    }
+  }
 
 /* Responsive tweaks */
 @media (max-width: 600px) {

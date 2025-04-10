@@ -163,12 +163,17 @@
   let i = 0;
   
   function type() {
-    if (i < fullText.length) {
-      typewriterText.textContent += fullText.charAt(i);
-      i++;
-      setTimeout(type, 75);
-    }
+  if (i < fullText.length) {
+    typewriterText.textContent += fullText.charAt(i);
+    i++;
+    setTimeout(type, 75);
+  } else {
+    // When typing is complete, ensure the CV button is properly positioned
+    document.querySelector('.cv-button').style.marginTop = '20px';
+    // Optionally add this class to stop the cursor
+    typewriterText.classList.add('typing-done');
   }
+}
   type();
 });
   </script>
