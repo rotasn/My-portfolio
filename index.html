@@ -104,6 +104,43 @@
         <a href="https://github.com/rotasn/marauder/releases/tag/v-2.0" target="_blank" class="project-link">View Project</a>
       </li>
     </ul>
+    <ul>
+      <li>
+        <b>File Encryptor</b>
+        <p><img src="encryptorpython.png" alt="Encryptor icon" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
+        <p><a href="#" class="toggle-description">Description</a></p>
+        <div class="project-description" style="display: none;">
+          <p>A secure desktop application for encrypting and decrypting files with password protection.</p>
+          <ul>
+            <li>Strong Encryption</li>
+            <li>Password Protection: Secure your files with password-based encryption</li>
+            <li>Modern UI</li>
+            <li>Optional automatic backup creation</li>
+            <li>Password Strength Meter</li>
+            <li>Automatic Encryption Detection</li>
+          </ul> 
+          <p><i>Built with PyQt5 for the UI framework and cryptography for the encryption functionality, using Python. Encryption Uses Fernet symmetric encryption with PBKDF2 key derivation.</i></p>
+        </div>
+        <a href="https://github.com/rotasn/file-encryptor/releases/tag/0.1" target="_blank" class="project-link">View Project</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <b>Connect 4</b>
+        <p><img src="connect4.png" alt="Connect 4 icon" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
+        <p><a href="#" class="toggle-description">Description</a></p>
+        <div class="project-description" style="display: none;">
+          <p>An old Uni project revamped. </p>
+          <ul>
+            <li>Improved AI difficulty</li>
+            <li>Transition from console to GUI</li>
+            <li>Position selection through keyboard or mouse</li>
+          </ul>
+          <p><i>Built with SDL, using C.</i></p>
+        </div>
+        <a href="https://github.com/rotasn/connect4" target="_blank" class="project-link">View Project</a>
+      </li>
+    </ul>
   </section>
   <!-- About Me Section -->
   <section class="info" id="about">
@@ -163,17 +200,12 @@
   let i = 0;
   
   function type() {
-  if (i < fullText.length) {
-    typewriterText.textContent += fullText.charAt(i);
-    i++;
-    setTimeout(type, 75);
-  } else {
-    // When typing is complete, ensure the CV button is properly positioned
-    document.querySelector('.cv-button').style.marginTop = '20px';
-    // Optionally add this class to stop the cursor
-    typewriterText.classList.add('typing-done');
+    if (i < fullText.length) {
+      typewriterText.textContent += fullText.charAt(i);
+      i++;
+      setTimeout(type, 75);
+    }
   }
-}
   type();
 });
   </script>
