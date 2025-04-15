@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* Add this style to make the line break work in the typewriter text */
     #typewriter-text {
       white-space: pre-line;
     }
@@ -35,7 +34,7 @@
       <img src="rotasn.jpg" alt="Nikolaos Rotas" class="profile-pic" />
       <div class="intro-text">
         <h1 id="typewriter-text"></h1>
-        <a href="CV.pdf" class="cv-button" download>Download CV</a>
+        <a href="./Rotas_CV.pdf" class="cv-button" download>Download CV</a>
       </div>
     </div>
   </section>
@@ -190,11 +189,9 @@
     });
   });
   
-  // Typewriter effect with pre-allocated space
   const typewriterText = document.getElementById("typewriter-text");
   const fullText = "Nikolaos Rotas\nElectrical and Computer Engineer";
   
-  // Pre-set the height of the container to prevent layout shifts
   typewriterText.style.height = (fullText.split('\n').length * 1.5) + 'em';
   
   let i = 0;

@@ -103,14 +103,12 @@ body {
     border-radius: 50%;
     margin-top: 49px;
     margin-bottom: 13px;
-    /* Remove the negative margin-left that's causing the shift */
-    /* margin-left: -30%; */
     object-fit: cover;
     object-position: center top;
     flex-shrink: 0;
-    position: relative; /* Add position */
+    position: relative; 
 }
-/* Info Section (Projects / Contact) */
+/* Info Section  */
 .info {
     padding: 40px 20px;
     max-width: 800px;
@@ -199,21 +197,21 @@ body {
     margin-bottom: 8px;
   }
   
-  /* Custom colors for each icon on hover */
+ 
   .social-icon:hover .fa-envelope {
-    color: #D44638; /* Gmail red */
+    color: #D44638; 
   }
   
   .social-icon:hover .fa-github {
-    color: #6e5494; /* GitHub purple */
+    color: #6e5494; 
   }
   
   .social-icon:hover .fa-linkedin {
-    color: #0077B5; /* LinkedIn blue */
+    color: #0077B5; 
   }
 
   .social-icon:hover .fa-phone {
-    color: #4CAF50; /* Green color */
+    color: #4CAF50; 
   }
   
 .prompt::before {
@@ -223,9 +221,9 @@ body {
   
 
 
-/* About Me Section */
+/* About Me  */
 #about {
-    background-color: #3a3a3a; /* Dark background for the about section */
+    background-color: #3a3a3a; 
     padding: 40px 20px;
     margin: 0 auto;
     max-width: 800px;
