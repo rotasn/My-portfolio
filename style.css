@@ -58,23 +58,23 @@ body {
     flex-wrap: wrap;
     gap: 40px;
     padding-top: 40px;
-    position: relative; /* Add position relative */
+    position: relative; 
 }
  
 .intro-text {
     text-align: left;
     max-width: 400px;
     min-height: 150px;
-    position: relative; /* Add position relative */
+    position: relative; 
 }
  
 .intro-text h1 {
     font-size: 28px;
     margin-bottom: 10px;
     color: white;
-    white-space: pre-line; /* Preserves line breaks */
-    min-height: 60px; /* Ensure space for two lines of text */
-    width: 140%; /* Ensure full width */
+    white-space: pre-line; /* preserves line breaks */
+    min-height: 60px; 
+    width: 140%; 
 }
   
 
