@@ -3,8 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nikolaos Rotas Portfolio</title>
- 
+  <title>Nikolaos Rotas | Software Engineer</title>
+  
+  <!-- Essential meta tags for search engines -->
+  <meta name="description" content="Portfolio of Nikolaos Rotas, Software Engineer.">
+  <meta name="keywords" content="Nikolaos Rotas, front-end developer, electrical engineer, computer engineer, JavaScript, React, Electron">
+  <meta name="author" content="Nikolaos Rotas">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph tags for social media sharing -->
+  <meta property="og:title" content="Nikolaos Rotas | Front-End Developer Portfolio">
+  <meta property="og:description" content="Portfolio of Nikolaos Rotas, Electrical and Computer Engineer specializing in front-end development.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -28,127 +40,125 @@
       </ul>
     </nav>
   </header>
+  
   <!-- Home / Landing Section -->
   <section class="landing" id="home">
     <div class="landing-container">
-      <img src="rotasn.jpg" alt="Nikolaos Rotas" class="profile-pic" />
+      <img src="rotasn.jpg" alt="Nikolaos Rotas - Front-End Developer" class="profile-pic" />
       <div class="intro-text">
         <h1 id="typewriter-text"></h1>
         <a href="./Rotas_CV.pdf" class="cv-button" target="_blank" rel="noopener noreferrer">View CV</a>
       </div>
     </div>
   </section>
+  
   <!-- Skills Section -->
   <section class="info" id="skills">
-    <h3>Skills</h3>
+    <h2>Skills</h2>
     <div class="skills-grid">
       <div class="skill-card">
-        <i class="devicon-javascript-plain colored"></i>
-        <h4>JavaScript</h4>
+        <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+        <h3>JavaScript</h3>
       </div>
       <div class="skill-card">
-        <i class="devicon-python-plain colored"></i>
-        <h4>Python</h4>
+        <i class="devicon-python-plain colored" aria-hidden="true"></i>
+        <h3>Python</h3>
       </div>
       <div class="skill-card">
-        <i class="devicon-react-plain colored"></i>
-        <h4>React</h4>
+        <i class="devicon-react-plain colored" aria-hidden="true"></i>
+        <h3>React</h3>
       </div>
       <div class="skill-card">
-        <i class="devicon-c-plain colored"></i>
-        <h4>C</h4>
+        <i class="devicon-c-plain colored" aria-hidden="true"></i>
+        <h3>C</h3>
       </div>
       <div class="skill-card">
-        <i class="devicon-electron-original colored"></i>
-        <h4>Electron</h4>
+        <i class="devicon-electron-original colored" aria-hidden="true"></i>
+        <h3>Electron</h3>
       </div>
       <div class="skill-card">
-        <i class="devicon-matlab-plain colored"></i>
-        <h4>Matlab</h4>
+        <i class="devicon-matlab-plain colored" aria-hidden="true"></i>
+        <h3>Matlab</h3>
       </div>
     </div>
   </section>
  
   <!-- Projects Section -->
   <section class="info" id="projects">
-    <h3>Projects</h3>
-    <ul>
-      <li>
-        <b>Marauder</b>
-        <p><img src="marauder.ico" alt="Marauder icon" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
-        <p><a href="#" class="toggle-description">Description</a></p>
-        <div class="project-description" style="display: none;">
-          <p>An automatic mapping tool for Interactive Fiction games.</p>
-          <ul>
-            <li>Automatic mapping of the game's rooms and connections.</li>
-            <li>A multi-layer display system to display rooms on different floors</li>
-            <li>Quick travel to the desired room</li>
-            <li>Note taking for rooms</li>
-            <li>Automatic exploration (using an agent to build the map)</li>
-            <li>Save/Load maps for future playthroughs</li>
-          </ul>
-          <p><i>Built with Electron, using JavaScript and a bit of Python. Room detection uses rule-based filtering and NLP. Quick travel uses BFS. Auto-exploration uses DFS + backtracking. Maps are saved as JSON.</i></p>
-        </div>
-        <a href="https://github.com/rotasn/marauder/releases/tag/v-2.0" target="_blank" class="project-link">View Project</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <b>Ball on Beam Simulation</b>
-        <p><img src="ballonbeam.png" alt="Ballonbeam icon" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
-        <p><a href="#" class="toggle-description">Description</a></p>
-        <div class="project-description" style="display: none;">
-          <p>A dynamic simulation of a classic control systems problem.</p>
-          <ul>
-            <li>Real-time PID control of a ball's position on a beam</li>
-            <li>Responsive UI for parameter tuning and visualization</li>            
-          </ul>
-          <p><i>Built with React. Physics approximated via kinematics + PID loop. SVG to simulate real-time visuals</i></p>
-        </div>
-        <a href="https://github.com/rotasn/ball-on-beam/" target="_blank" class="project-link">View Project</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <b>File Encryptor</b>
-        <p><img src="encryptorpython.png" alt="Encryptor icon" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
-        <p><a href="#" class="toggle-description">Description</a></p>
-        <div class="project-description" style="display: none;">
-          <p>A secure desktop application for encrypting and decrypting files with password protection.</p>
-          <ul>
-            <li>Strong Encryption</li>
-            <li>Password Protection: Secure your files with password-based encryption</li>
-            <li>Modern UI</li>
-            <li>Optional automatic backup creation</li>
-            <li>Password Strength Meter</li>
-            <li>Automatic Encryption Detection</li>
-          </ul> 
-          <p><i>Built with PyQt5 for the UI framework and cryptography for the encryption functionality, using Python. Encryption Uses Fernet symmetric encryption with PBKDF2 key derivation.</i></p>
-        </div>
-        <a href="https://github.com/rotasn/file-encryptor/releases/tag/0.1" target="_blank" class="project-link">View Project</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <b>Connect 4</b>
-        <p><img src="connect4.png" alt="Connect 4 icon" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
-        <p><a href="#" class="toggle-description">Description</a></p>
-        <div class="project-description" style="display: none;">
-          <p>An old Uni project revamped. </p>
-          <ul>
-            <li>Improved AI difficulty</li>
-            <li>Transition from console to GUI</li>
-            <li>Position selection through keyboard or mouse</li>
-          </ul>
-          <p><i>Built with SDL, using C.</i></p>
-        </div>
-        <a href="https://github.com/rotasn/connect4" target="_blank" class="project-link">View Project</a>
-      </li>
-    </ul>
+    <h2>Projects</h2>
+    <article>
+      <h3>Marauder</h3>
+      <p><img src="marauder.ico" alt="Marauder - Interactive Fiction Mapping Tool" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
+      <p><a href="#" class="toggle-description">Description</a></p>
+      <div class="project-description" style="display: none;">
+        <p>An automatic mapping tool for Interactive Fiction games.</p>
+        <ul>
+          <li>Automatic mapping of the game's rooms and connections.</li>
+          <li>A multi-layer display system to display rooms on different floors</li>
+          <li>Quick travel to the desired room</li>
+          <li>Note taking for rooms</li>
+          <li>Automatic exploration (using an agent to build the map)</li>
+          <li>Save/Load maps for future playthroughs</li>
+        </ul>
+        <p><i>Built with Electron, using JavaScript and a bit of Python. Room detection uses rule-based filtering and NLP. Quick travel uses BFS. Auto-exploration uses DFS + backtracking. Maps are saved as JSON.</i></p>
+      </div>
+      <a href="https://github.com/rotasn/marauder/releases/tag/v-2.0" target="_blank" class="project-link">View Project</a>
+    </article>
+    
+    <article>
+      <h3>Ball on Beam Simulation</h3>
+      <p><img src="ballonbeam.png" alt="Ball on Beam Simulation - Control Systems Project" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
+      <p><a href="#" class="toggle-description">Description</a></p>
+      <div class="project-description" style="display: none;">
+        <p>A dynamic simulation of a classic control systems problem.</p>
+        <ul>
+          <li>Real-time PID control of a ball's position on a beam</li>
+          <li>Responsive UI for parameter tuning and visualization</li>            
+        </ul>
+        <p><i>Built with React. Physics approximated via kinematics + PID loop. SVG to simulate real-time visuals</i></p>
+      </div>
+      <a href="https://github.com/rotasn/ball-on-beam/" target="_blank" class="project-link">View Project</a>
+    </article>
+    
+    <article>
+      <h3>File Encryptor</h3>
+      <p><img src="encryptorpython.png" alt="File Encryptor - Secure File Encryption Tool" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
+      <p><a href="#" class="toggle-description">Description</a></p>
+      <div class="project-description" style="display: none;">
+        <p>A secure desktop application for encrypting and decrypting files with password protection.</p>
+        <ul>
+          <li>Strong Encryption</li>
+          <li>Password Protection: Secure your files with password-based encryption</li>
+          <li>Modern UI</li>
+          <li>Optional automatic backup creation</li>
+          <li>Password Strength Meter</li>
+          <li>Automatic Encryption Detection</li>
+        </ul> 
+        <p><i>Built with PyQt5 for the UI framework and cryptography for the encryption functionality, using Python. Encryption Uses Fernet symmetric encryption with PBKDF2 key derivation.</i></p>
+      </div>
+      <a href="https://github.com/rotasn/file-encryptor/releases/tag/0.1" target="_blank" class="project-link">View Project</a>
+    </article>
+    
+    <article>
+      <h3>Connect 4</h3>
+      <p><img src="connect4.png" alt="Connect 4 - Classic Game Implementation" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
+      <p><a href="#" class="toggle-description">Description</a></p>
+      <div class="project-description" style="display: none;">
+        <p>An old Uni project revamped. </p>
+        <ul>
+          <li>Improved AI difficulty</li>
+          <li>Transition from console to GUI</li>
+          <li>Position selection through keyboard or mouse</li>
+        </ul>
+        <p><i>Built with SDL, using C.</i></p>
+      </div>
+      <a href="https://github.com/rotasn/connect4" target="_blank" class="project-link">View Project</a>
+    </article>
   </section>
+  
   <!-- About Me Section -->
   <section class="info" id="about">
-    <h3>About Me</h3>
+    <h2>About Me</h2>
     <p>
         I studied Mathematics for two years before switching to ECE. In 2025, I graduated from the University of Patras with an Integrated Master's in Electrical Engineering and Computer Technology. During my studies, I minored in Control Systems and Computer Technology.
     </p>
@@ -158,30 +168,52 @@
     <p>
         I am now starting my career as an Electrical and Computer Engineer with a strong passion for software engineering. My interests span across hardware, software development, and integrating technology in meaningful ways to solve real-world problems.
     </p>
-</section>
+  </section>
 
   <!-- Contact Section -->
   <section class="info" id="contact">
-    <h3>Contact</h3>
+    <h2>Contact</h2>
     <div class="social-icons">
       <a href="mailto:rotasn@gmail.com" class="social-icon">
-        <i class="fas fa-envelope"></i>
+        <i class="fas fa-envelope" aria-hidden="true"></i>
         <span>Email</span>
       </a>
       <a href="https://github.com/rotasn" class="social-icon" target="_blank">
-        <i class="fab fa-github"></i>
+        <i class="fab fa-github" aria-hidden="true"></i>
         <span>GitHub</span>
       </a>
       <a href="https://linkedin.com/in/rotasn" class="social-icon" target="_blank">
-        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
         <span>LinkedIn</span>
       </a>
       <a href="tel:+306982994556" class="social-icon">
-        <i class="fas fa-phone"></i>
+        <i class="fas fa-phone" aria-hidden="true"></i>
         <span>Phone</span>
       </a>
     </div>
   </section>
+  
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nikolaos Rotas",
+    "jobTitle": "Software Engineer",
+    "url": "https://rotasn.github.io/",    
+    "sameAs": [
+      "https://github.com/rotasn",
+      "https://linkedin.com/in/rotasn"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "University of Patras",
+      "department": "Electrical Engineering and Computer Technology"
+    },
+    "knowsAbout": ["JavaScript", "React", "Python", "C", "Electron", "Matlab"]
+  }
+  </script>
+  
   <!-- Scripts -->
   <script>
    document.addEventListener('DOMContentLoaded', function () {
@@ -189,7 +221,7 @@
   toggleLinks.forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
-      const description = this.closest('li').querySelector('.project-description');
+      const description = this.closest('article').querySelector('.project-description');
       description.style.display = description.style.display === 'none' ? 'block' : 'none';
     });
   });
